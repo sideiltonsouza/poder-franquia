@@ -1,0 +1,16 @@
+section {
+    flex-direction: column;
+    height: 70vh;
+    background: url(/assets/imagens/bg-local.webp) no-repeat center/cover;
+    text-transform: uppercase;
+}
+
+:is(p, h1){
+    margin: .5em 0;
+}
+
+@media screen and (max-width: 800px) {
+    section {
+        background-position: -10rem;
+    }
+}

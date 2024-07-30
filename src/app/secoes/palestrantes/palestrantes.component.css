@@ -1,0 +1,198 @@
+section{
+    flex-direction: column;
+    padding-top: 15rem;
+    min-height: 100vh;
+}
+
+section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 15rem;
+    background: url(/assets/imagens/divisao3.webp) no-repeat center/contain;
+}
+
+h1{
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card:first-of-type{
+    margin-top: 4rem;
+}
+
+.card img, .sobre{
+    flex: 1;
+    height: auto;
+    object-fit: contain;
+}
+
+.sobre{
+    padding-top: 4rem;
+    margin-left: 2rem;
+}
+
+.sobre > div{
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+summary, h2{
+    color: var(--primary);
+}
+
+summary{
+    cursor: pointer;
+}
+
+h2{
+    margin-bottom: 1rem;
+}
+
+p{
+    margin: .5em 0;
+}
+
+.card:not(:first-of-type){
+    align-items: center;
+}
+
+.card:nth-of-type(2){
+    flex-direction: row-reverse;
+}
+
+#frase{
+    position: relative;
+    background: var(--cinza);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2rem 1rem;
+    overflow: visible;
+    border-bottom: var(--primary) 2px solid;
+    border-top: var(--primary) 2px solid;
+}
+
+#frase p{
+    width: 50%;
+    margin-right: 30vw;
+}
+
+#frase img{
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    object-fit: contain;
+}
+
+#logos{
+    flex-direction: row;
+    width: 100%;
+    max-width: 800px;
+    padding: 4rem 0;
+}
+
+#logos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+#logos img{
+    width: 8rem;
+    height: 8rem;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 800px) {
+section{
+    padding-top: 10rem;
+}
+
+    section::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 130%;
+        height: 10rem;
+        background: url(/assets/imagens/divisao3-m.webp) no-repeat center/contain;
+    }
+    .card{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    .card img{
+        width: 100%;
+    }
+
+    .sobre img{
+        width: 100%;
+        margin-bottom: -4rem;
+    }
+
+    .sobre{
+        padding: 0 .5em;
+        margin: 0;
+    }
+
+    .card:nth-of-type(2){
+        flex-direction: column;
+    }
+
+    #frase{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+    }
+    
+    #frase p{
+        width: 60%;
+        margin: 0;
+    }
+    
+    #frase img{
+        align-self: flex-end;
+        width: 80vw;
+        height: 80vw;
+        translate: 50% -10%;
+    }
+
+    #logos{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #logos div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        height: auto;
+    }
+    
+    #logos img{
+        width: 8rem;
+        height: 8rem;
+        object-fit: contain;
+    }
+}

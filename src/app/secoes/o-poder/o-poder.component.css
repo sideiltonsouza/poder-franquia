@@ -1,0 +1,92 @@
+section{
+    flex-direction: column;
+    background: url(/assets/imagens/bg-bilhao.webp) no-repeat top/contain;
+}
+
+#paraquem{
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+#paraquem :is(div, ul){
+    display: flex;
+    flex-direction: column;
+}
+
+#paraquem h1{
+    width: 20vw;
+    font-size: 2rem;
+}
+
+#paraquem > div{
+    align-items: flex-end;
+}
+
+strong{
+    color: var(--primary);
+}
+
+ul{
+    font-size: 1.3rem;
+    padding-left: 2rem;
+}
+
+li{
+    display: flex;
+    padding: .5em;
+    align-items: center;
+    text-align: left;
+}
+
+li::before{
+    content: "";
+    min-width: 1rem;
+    height: 1rem;
+    background: var(--primary);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+h2{
+    font-weight: 100;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+section > h1{
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--preto);
+    font-size: 1.8rem;
+    background: url(/assets/imagens/bg-frase.webp) no-repeat center/cover;
+}
+
+section > h1 strong{
+    color: var(--secondary);
+}
+
+@media screen and (max-width: 800px) {
+
+    section{
+        background-size: 200%;
+        background-position: center;
+    }
+
+    #paraquem{
+        flex-direction: column;
+    }
+    #paraquem h1{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    ul{
+        padding: 0;
+    }
+}

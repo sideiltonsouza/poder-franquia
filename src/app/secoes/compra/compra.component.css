@@ -1,0 +1,60 @@
+section{
+   background: url(/assets/imagens/bg-preco.webp) no-repeat center/cover;
+   border-top: var(--primary) solid 4px;
+    padding: 4rem 1rem;
+}
+
+h1{
+    margin-right: 4rem;
+}
+
+#card{
+    width: 100%;
+    max-width: 400px;
+    background: var(--secondary);
+    border: var(--primary) solid 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+img{
+    width: 85%;
+    height: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 1.2rem;
+    background: var(--primary);
+    padding: .5em 1em;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: .5em;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+a:hover{
+    background: var(--preto);
+    rotate: -1deg;
+}
+
+cite{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    
+    h1{
+        margin: 0 0 2rem 0;
+    }
+}

@@ -1,0 +1,35 @@
+section{
+    background: url(/assets/imagens/bg-secao2.webp) no-repeat center/cover;
+    padding: 6rem 1rem;
+}
+
+section div img{
+    width: 100vw;
+    max-width: 600px;
+    padding: 1em;
+}
+
+section>img{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: auto;
+}
+
+:is(h1, p, h3){
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h3{
+    font-weight: 200;
+}
+
+h1{
+    color: var(--primary);
+}
+
+p{
+    margin: 2rem 0;
+}

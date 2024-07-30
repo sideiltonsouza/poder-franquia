@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: ease-in-out .5s;
+}
+
+:root{
+    --primary: #c6871f;
+    --secondary: #f4f4f4;
+    --preto: #1d1d1d;
+    --cinza: #4b4b4b;
+}
+
+html{
+    min-height: 100vh;
+    background: #000;
+    color: var(--secondary);
+    overflow-y: scroll;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 8rem;
+    position: relative;
+}
+
+section div{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 800px) {
+    section{
+        flex-direction: column;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+}
+

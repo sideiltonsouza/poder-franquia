@@ -1,0 +1,8 @@
+section{
+    background: var(--primary);
+}
+
+a{
+    color: var(--preto);
+    text-decoration: none;
+}
