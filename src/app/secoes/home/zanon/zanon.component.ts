@@ -8,13 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './zanon.component.css'
 })
 export class ZanonComponent {
-  
-public compra = () =>{
-  document.querySelectorAll(".compra")[0].scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest"
-      });
-}
 
 }

@@ -8,12 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  public compra = () =>{
-    document.querySelectorAll(".compra")[0].scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest"
-        });
-  }
 
 }

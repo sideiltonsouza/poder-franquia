@@ -24,7 +24,7 @@ export const routes: Routes = [
         path: 'wilton', component: WiltonComponent
     },
     {
-        path: 'canizza', component: CanizzaComponent
+        path: 'cannizza', component: CanizzaComponent
     },
     {
         path: 'gustavo', component: GustavoComponent
