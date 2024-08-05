@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { BotaoHomeComponent } from "../../../botao-home/botao-home.component";
 
 @Component({
   selector: 'app-canizza',
   standalone: true,
-  imports: [BotaoHomeComponent],
+  imports: [],
   templateUrl: './canizza.component.html',
   styleUrl: './canizza.component.css'
 })
