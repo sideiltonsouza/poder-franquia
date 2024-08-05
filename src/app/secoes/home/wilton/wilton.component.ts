@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './wilton.component.css'
 })
 export class WiltonComponent {
+  public compra = () =>{
+    document.querySelectorAll(".compra")[0].scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+        });
+  }
 
 }

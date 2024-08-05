@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './eduardo.component.css'
 })
 export class EduardoComponent {
+  public compra = () =>{
+    document.querySelectorAll(".compra")[0].scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+        });
+  }
 
 }
