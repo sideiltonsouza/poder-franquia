@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Compra } from '../../../compra';
 
 @Component({
   selector: 'app-wilton',
@@ -7,13 +8,6 @@ import { Component } from '@angular/core';
   templateUrl: './wilton.component.html',
   styleUrl: './wilton.component.css'
 })
-export class WiltonComponent {
-  public compra = () =>{
-    document.querySelectorAll(".compra")[0].scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest"
-        });
-  }
-
+export class WiltonComponent extends Compra{
+ 
 }

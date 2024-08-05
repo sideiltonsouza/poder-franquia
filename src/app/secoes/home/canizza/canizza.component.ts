@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Compra } from '../../../compra';
+
 
 @Component({
   selector: 'app-canizza',
@@ -7,14 +9,6 @@ import { Component } from '@angular/core';
   templateUrl: './canizza.component.html',
   styleUrl: './canizza.component.css'
 })
-export class CanizzaComponent {
+export class CanizzaComponent extends Compra{
  
-public compra = () =>{
-  document.querySelectorAll(".compra")[0].scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest"
-      });
-}
-
 }

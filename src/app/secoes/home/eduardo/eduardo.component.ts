@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Compra } from '../../../compra';
 
 @Component({
   selector: 'app-eduardo',
@@ -7,13 +8,6 @@ import { Component } from '@angular/core';
   templateUrl: './eduardo.component.html',
   styleUrl: './eduardo.component.css'
 })
-export class EduardoComponent {
-  public compra = () =>{
-    document.querySelectorAll(".compra")[0].scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest"
-        });
-  }
+export class EduardoComponent extends Compra{
 
 }

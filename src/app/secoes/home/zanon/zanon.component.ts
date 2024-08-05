@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Compra } from '../../../compra';
 
 @Component({
   selector: 'app-zanon',
@@ -7,14 +8,6 @@ import { Component } from '@angular/core';
   templateUrl: './zanon.component.html',
   styleUrl: './zanon.component.css'
 })
-export class ZanonComponent {
+export class ZanonComponent extends Compra{
   
-public compra = () =>{
-  document.querySelectorAll(".compra")[0].scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest"
-      });
-}
-
 }
