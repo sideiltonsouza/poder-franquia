@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-eduardo',
+  selector: 'app-botao-home',
   standalone: true,
   imports: [],
-  templateUrl: './eduardo.component.html',
-  styleUrl: './eduardo.component.css'
+  templateUrl: './botao-home.component.html',
+  styleUrl: './botao-home.component.css'
 })
-export class EduardoComponent {
+export class BotaoHomeComponent {
   public compra = () =>{
     document.querySelectorAll(".compra")[0].scrollIntoView({
         behavior: "smooth",
@@ -15,5 +15,4 @@ export class EduardoComponent {
         inline: "nearest"
         });
   }
-
 }
