@@ -14,8 +14,10 @@ export class CompraComponent {
   public url = new URL(window.location.href);
   public src: any = this.url.searchParams.get("src")
 
-  public teste: string  = this.src;
+  public source: string  = this.src;
 
-    public linkCompra:string = "https://pay.kiwify.com.br/0flVrnB" + this.srcAtual + '?src=' + this.teste;
+    // public linkCompra:string = "https://pay.kiwify.com.br/0flVrnB" + "?slug=" + this.srcAtual.replace('/','') + '&src=' + this.source;
+
+    public linkCompra:string = "https://pay.kiwify.com.br/0flVrnB" + '?src=' + this.srcAtual.replace('/','');
 
 }
